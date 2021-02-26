@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    letter-spacing: 1px;
+    background-color: #111114;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(218, 218, 218);
+}
+
+.container {
+    margin: 30px auto;
+    padding: 30px;
+    width: 350px;
+    border: 1px solid #3b3b3b;
+    border-radius: 15px;
+}
+
+h1 {
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.3rem;
+    margin-bottom: 0;
+}
+
+h3 {
+    margin: 10px;
+    font-weight: 300;
+    color: #758fd6;
+}
+
+h4 {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #758fd6;
+}
+
+#balance {
+    text-align: center;
+}
+
+.inc-exp-container {
+    background-color: rgb(27, 27, 32);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+.inc-exp-container > div {
+    flex: 1;
+    text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+    border-right: 1px solid #dedede;
+}
+
+#income {
+    cursor: pointer;
+}
+
+#expense {
+    cursor: pointer;
+}
+
+.money {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+.money.plus {
+    color: #2ecc71;
+}
+
+.money.minus {
+    color: #c0392b;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+input[type='text'], input[type='number'] {
+    border: 1px solid #3b3b3b;
+    border-radius: 20px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(27, 27, 32);
+    color: white;
+    margin-bottom: 15px;
+}
+
+input[type='text'] {
+    margin-top: 20px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #364c86;
+    color: white;
+    border: 0;
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 30px;
+    padding: 15px 0;
+    width: 100%;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+.btn:focus, .delete-btn:focus {
+    outline: 0;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #3b3b3b;
+}
+
+.list li {
+    background-color: rgb(27, 27, 32);
+    color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+.list li.minus {
+    border-bottom: 2px solid #c0392b;
+}
+
+.list li.plus {
+    border-bottom: 2px solid #2ecc71;
+}
+
+.delete-btn {
+    background-color: #da4838;
+    text-align: center;
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    font-size: 28px;
+    line-height: 28px;
+    padding: 0 7px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.list li:hover .delete-btn {
+    opacity: 1;
+}
+
+
+
