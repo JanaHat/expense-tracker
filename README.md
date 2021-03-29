@@ -5,4 +5,4 @@ You can also delete transactions from the list.
 
 
 You can view app here:
-https://stupefied-gates-3210d7.netlify.app
+https://expense-tracker-janah.netlify.app
